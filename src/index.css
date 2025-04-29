@@ -53,11 +53,13 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  height: 100dvh;
   width: 100vw;
   overflow: hidden;
   align-items: center;
   background-color: var(--dark-100);
   color: var(--white-90);
+  font-size: 16px;
 }
 
 #root {
@@ -134,6 +136,7 @@ body {
   min-height: 50px;
   max-height: 200px;
   overflow-y: auto;
+  font-size: 16px;
 }
 
 .input-container textarea:focus {
