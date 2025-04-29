@@ -1,19 +1,19 @@
 # React + Vite
 
-Live on: chat-tan-ten.vercel.app
+Live: chat-tan-ten.vercel.app
 
 Щоб запустити проект:
- 1. Клонуйте репозиторій: git clone <repo-url>
- 2. Перейдіть у папку проєкту: cd chat-app
+ 1. Клонуйте репозиторій: git clone https://github.com/Nastasia27/chat.git
+ 2. Перейдіть у папку проєкту: cd chat
  3. Встановіть залежності: npm install
  4. Запустіть проєкт: npm run dev
 
 # Автоскролл
-Використовується useRef для створення посилання (bottomRef) на блок в кінці списку повідомлень.
-Зміна масиву messages заупскає useEffect, який в свою чергу запускає функцію скролу до bottomRef:
+Використовується useRef для створення посилання на блок в кінці списку повідомлень (bottomRef).
+Коли масив messages змінюється, useEffect викликає функцію скролу до bottomRef:
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
 
 # Управління станом
-Для цього проєкту було обрано Zustand через його простоту та мінімалістичність.
+Для збереження повідомлень та статусу введення було обрано Zustand через його простоту та мінімалістичність.
 
 
